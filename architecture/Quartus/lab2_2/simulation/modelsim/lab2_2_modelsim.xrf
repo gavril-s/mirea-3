@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Code/MIREA/3/architecture_3/lab2_2/lab2_2.tdf
+source_file = 1, C:/Code/MIREA/3/architecture_3/lab2_2/db/lab2_2.cbx.xml
+design_name = lab2_2
+instance = comp, \y3~output\, y3~output, lab2_2, 1
+instance = comp, \y2~output\, y2~output, lab2_2, 1
+instance = comp, \y1~output\, y1~output, lab2_2, 1
+instance = comp, \y0~output\, y0~output, lab2_2, 1
+instance = comp, \s1~input\, s1~input, lab2_2, 1
+instance = comp, \i~input\, i~input, lab2_2, 1
+instance = comp, \s0~input\, s0~input, lab2_2, 1
+instance = comp, \y3~0\, y3~0, lab2_2, 1
+instance = comp, \y2~0\, y2~0, lab2_2, 1
+instance = comp, \y1~0\, y1~0, lab2_2, 1
+instance = comp, \y0~0\, y0~0, lab2_2, 1

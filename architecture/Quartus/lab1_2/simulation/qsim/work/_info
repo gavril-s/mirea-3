@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Code\MIREA\3\architecture_3\lab1_2\simulation\qsim
+vlab1_2
+Z1 IT=DfPSYAV[TEj]Sooe6`F2
+Z2 V@lch]NHlTb:MZ_d4fPTXa3
+Z3 dC:\Code\MIREA\3\architecture_3\lab1_2\simulation\qsim
+Z4 w1701121970
+Z5 8lab1_2.vo
+Z6 Flab1_2.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 f@zUXM<7d54E5ZEn5oXG[1
+!s85 0
+Z10 !s108 1701121970.974000
+Z11 !s107 lab1_2.vo|
+Z12 !s90 -work|work|lab1_2.vo|
+!s101 -O0
+vlab1_2_vlg_check_tst
+!i10b 1
+!s100 =6iEdPZFY6LDNc[MRdVb=1
+Ig635MUgD_YjE0YWgD;efm0
+V=KHKQ73Wm2<J@lWB;TK]M1
+R3
+Z13 w1701121968
+Z14 8Waveform.vwf.vt
+Z15 FWaveform.vwf.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z16 !s108 1701121971.035000
+Z17 !s107 Waveform.vwf.vt|
+Z18 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R8
+vlab1_2_vlg_sample_tst
+!i10b 1
+!s100 [=J;K=?9DJ672lF96c5Wa0
+I^zS0dOAm`kBnU>deKG?d;3
+V:kSZo49K7H2cW`Ek5i2GH1
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vlab1_2_vlg_vec_tst
+!i10b 1
+!s100 U?WT^a9iJ2BdAj<HKJGc11
+IB8Tl5ig;dR1JJQh6NXQSK2
+V38l[@BeW?bR4mKeTm_A^k1
+R3
+R13
+R14
+R15
+L0 158
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

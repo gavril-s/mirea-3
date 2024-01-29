@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/Code/MIREA/3/architecture_3/lab1_1/lab1_1.bdf
+source_file = 1, C:/Code/MIREA/3/architecture_3/lab1_1/Waveform.vwf
+source_file = 1, C:/Code/MIREA/3/architecture_3/lab1_1/db/lab1_1.cbx.xml
+design_name = lab1_1
+instance = comp, \Y~output , Y~output, lab1_1, 1
+instance = comp, \A~input , A~input, lab1_1, 1
+instance = comp, \B~input , B~input, lab1_1, 1
+instance = comp, \C~input , C~input, lab1_1, 1
+instance = comp, \D~input , D~input, lab1_1, 1
+instance = comp, \inst3~0 , inst3~0, lab1_1, 1

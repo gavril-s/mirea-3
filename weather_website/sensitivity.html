@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода на месяц</title>
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/common.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-lg my-4 px-3 rounded-4 lead">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="/">GS.Weather</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto align-items-center text-nowrap mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="/" class="nav-link active text-light" aria-current="page">Главная</a></li>
+                        <li class="nav-item"><a href="/forecast.html" class="nav-link text-light">Прогноз</a></li>
+                        <li class="nav-item"><a href="/methods.html" class="nav-link text-light">Методы</a></li>
+                        <li class="nav-item"><a href="/sensitivity.html" class="nav-link text-light">Метеочувствительность</a></li>
+                        <li class="nav-item"><a href="/about.html" class="nav-link text-light">О нас</a></li>
+                    </ul>
+                    <span class="navbar-text text-light ms-lg-3 d-flex align-items-center justify-content-center">
+                        <small>Сенькевич Гаврил Дмитриевич, ИКБО-30-22</small>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <main>
+            <div id="overview" class="lead">
+                <h1 class="mb-4">Метеочувствительность: Как погода влияет на нас</h1>
+                <p>Метеочувствительность — это феномен, при котором изменения в погодных условиях могут влиять на физическое и эмоциональное состояние человека. Многие люди замечают, что их настроение, здоровье и даже энергия могут изменяться в зависимости от погоды за окном.</p>
+                <p>Существует несколько основных аспектов метеочувствительности, среди которых:</p>
+                <ul>
+                    <li><b>Боли в суставах:</b> Некоторые люди отмечают усиление болей в суставах при изменении атмосферного давления. Это особенно часто происходит перед дождем или снегопадом.</li>
+                    <li><b>Головные боли:</b> Метеочувствительные люди могут страдать от головных болей или мигрени, вызванных изменениями в атмосферном давлении и влажности воздуха.</li>
+                    <li><b>Сонливость и усталость:</b> Погода также может влиять на уровень энергии и бодрствование. Так, пасмурные дни могут вызывать сонливость, в то время как солнечная погода может повысить активность.</li>
+                    <li><b>Эмоциональные изменения:</b> У некоторых людей изменения в погоде могут вызывать эмоциональные колебания, такие как депрессия или беспокойство.</li>
+                </ul>
+                <p>Метеочувствительность может быть вызвана различными факторами, включая индивидуальные особенности организма, наличие хронических заболеваний и общее физическое состояние.</p>
+                <p>Важно отметить, что метеочувствительность — это индивидуальный опыт, и не все люди испытывают подобные изменения в ответ на погодные условия. Тем не менее, для тех, кто чувствителен к погоде, важно следить за прогнозами и принимать меры для поддержания своего физического и эмоционального благополучия.</p>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div id="headaches" class="row featurette m-5">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Головные боли</h2>
+                    <p class="lead">Головные боли, особенно мигрени, могут ухудшаться у метеочувствительных людей вследствие колебаний атмосферного давления и влажности. Основная причина — это влияние этих изменений на кровеносные сосуды головного мозга. При падении атмосферного давления сосуды могут расширяться, вызывая болезненные ощущения. Также, влажность воздуха влияет на гидратацию организма, которая при недостаточном уровне может привести к обезвоживанию, отчасти способствующему головным болям. Мигрень может сопровождаться светобоязнью, тошнотой и рядом других симптомов, существенно влияя на качество жизни. Чтобы справиться с головными болями, вызванными погодными изменениями, рекомендуется следить за гидратацией, избегать стресса, поддерживать регулярный распорядок сна и при необходимости применять обезболивающие препараты под наблюдением врача.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/sensitivity_headache.jpg" rolte="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                </div>
+            </div>
+          
+            <hr class="featurette-divider">
+          
+            <div id="sleep" class="row featurette m-5">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Сонливость и усталость</h2>
+                    <p class="lead">Пасмурная погода часто ассоциируется с сонливостью и усталостью у людей, предположительно, из-за снижения уровня солнечного света, который является ключевым регулятором нашего циркадного ритма — внутренних биологических часов. Солнечный свет стимулирует производство витамина D и серотонина — гормона, отвечающего за бодрость и хорошее настроение. В тёмное время года или в пасмурные дни чувство сонливости может быть усилено из-за снижения этих важных биохимических процессов. К тому же, недостаток солнца воздействует на производство мелатонина, который помогает управлять сном, и его избыточное выделение может усилить чувство усталости. В отличие от этого, ясные, солнечные дни могут привести к увеличению энергии и активности, поскольку благоприятно воздействуют на биологические ритмы организма и общее психоэмоциональное состояние. Для справления с сезонной усталостью и сонливостью рекомендуется увеличивать физическую активность, проводить больше времени на открытом воздухе в светлое время суток и тщательно следить за соблюдением режима сна.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/sensitivity_sleep.jpg" rolte="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                </div>
+            </div>
+          
+            <hr class="featurette-divider">
+          
+            <div id="emotions" class="row featurette m-5">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Эмоциональные изменения</h2>
+                    <p class="lead">Изменения погоды могут оказывать значительное влияние на эмоциональное состояние человека. Например, продолжительные пасмурные и дождливые дни могут привести к ощущениям подавленности и депрессии. Это часто объясняется недостатком солнечного света, который стимулирует выработку серотонина — "гормона счастья". Без достаточного количества серотонина люди могут чувствовать ухудшение настроения и снижение мотивации.
+
+                        Кроме того, резкие изменения погоды, такие как смена сезонов, особенно переход от теплого к холодному времени года, могут вызывать сезонное аффективное расстройство (САР), характеризующееся появлением симптомов депрессии. Люди с САР могут испытывать глубокие эмоциональные изменения, такие как грусть, анедония, потеря интереса к обычным активностям и затруднения в социальных взаимодействиях.
+                        
+                        Аналогично, жаркая и душная погода может спровоцировать беспокойство и раздражительность, влияя на концентрацию и способствуя возникновению стресса. Экстремальные погодные условия, такие как жара или сильные штормы, могут усилить ощущение беспомощности и тревожности.
+                        
+                        Для смягчения эмоциональных колебаний, вызванных погодными изменениями, может помочь физическая активность, правильное питание, увеличение времени пребывания на свежем воздухе в светлое время суток, регулярное общение с другими людьми и при необходимости консультация со специалистами об управлении своим эмоциональным состоянием.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/sensitivity_emotions.jpg" rolte="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="container pb-4">
+        <footer class="border-top">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5">
+                <div class="col mb-3">
+                    <h5>Главная</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="/#" class="nav-link p-0 text-body-secondary">Начало</a></li>
+                        <li class="nav-item mb-2"><a href="/#forecast-input" class="nav-link p-0 text-body-secondary">Подробный прогноз</a></li>
+                        <li class="nav-item mb-2"><a href="/#city-weather" class="nav-link p-0 text-body-secondary">Погода в городах</a></li>
+                        <li class="nav-item mb-2"><a href="/#text" class="nav-link p-0 text-body-secondary">Текст</a></li>
+                    </ul>
+                </div>
+        
+                <div class="col mb-3">
+                    <h5>Прогноз</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="/forecast.html#search" class="nav-link p-0 text-body-secondary">Поиск</a></li>
+                        <li class="nav-item mb-2"><a href="/forecast.html#weather" class="nav-link p-0 text-body-secondary">Погода</a></li>
+                        <li class="nav-item mb-2"><a href="/forecast.html#forecast" class="nav-link p-0 text-body-secondary">Прогноз</a></li>
+                    </ul>
+                </div>
+        
+                <div class="col mb-3">
+                    <h5>Методы</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="/methods.html#overview" class="nav-link p-0 text-body-secondary">Обзор</a></li>
+                        <li class="nav-item mb-2"><a href="/methods.html#intro" class="nav-link p-0 text-body-secondary">Введение</a></li>
+                        <li class="nav-item mb-2"><a href="/methods.html#data" class="nav-link p-0 text-body-secondary">Основной текст</a></li>
+                        <li class="nav-item mb-2"><a href="/methods.html#outro" class="nav-link p-0 text-body-secondary">Заключение</a></li>
+                    </ul>
+                </div>
+
+                <div class="col mb-3">
+                    <h5>Метеочувствительность</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="/sensitivity.html#overview" class="nav-link p-0 text-body-secondary">Обзор</a></li>
+                        <li class="nav-item mb-2"><a href="/sensitivity.html#headaches" class="nav-link p-0 text-body-secondary">Головные боли</a></li>
+                        <li class="nav-item mb-2"><a href="/sensitivity.html#sleep" class="nav-link p-0 text-body-secondary">Сонливость</a></li>
+                        <li class="nav-item mb-2"><a href="/sensitivity.html#emotions" class="nav-link p-0 text-body-secondary">Эмоциональные изменения</a></li>
+                    </ul>
+                </div>
+
+                <div class="col mb-3">
+                    <h5>О нас</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="/about.html" class="nav-link p-0 text-body-secondary">Начало</a></li>
+                        <li class="nav-item mb-2"><a href="/about.html#about" class="nav-link p-0 text-body-secondary">О нас</a></li>
+                        <li class="nav-item mb-2"><a href="/about.html#questions" class="nav-link p-0 text-body-secondary">Вопросы</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center my-5">
+                <p class="text-body-secondary">© Сенькевич Гаврил Дмитриевич, ИКБО-30-22</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html> 

@@ -1,0 +1,8 @@
+SUBDESIGN 'lab1_2'
+(
+a, b, c, d : INPUT;
+y : OUTPUT;
+)
+BEGIN
+y = (a and b and c) or (b nand d) or (a nand d);
+END;

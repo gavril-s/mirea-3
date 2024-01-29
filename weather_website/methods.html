@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода на месяц</title>
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/common.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-lg my-4 px-3 rounded-4 lead">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="/">GS.Weather</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto align-items-center text-nowrap mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="/" class="nav-link active text-light" aria-current="page">Главная</a></li>
+                        <li class="nav-item"><a href="/forecast.html" class="nav-link text-light">Прогноз</a></li>
+                        <li class="nav-item"><a href="/methods.html" class="nav-link text-light">Методы</a></li>
+                        <li class="nav-item"><a href="/sensitivity.html" class="nav-link text-light">Метеочувствительность</a></li>
+                        <li class="nav-item"><a href="/about.html" class="nav-link text-light">О нас</a></li>
+                    </ul>
+                    <span class="navbar-text text-light ms-lg-3 d-flex align-items-center justify-content-center">
+                        <small>Сенькевич Гаврил Дмитриевич, ИКБО-30-22</small>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <main>
+            <h1 id="overview">Как работает прогноз погоды?</h1>
+            <div class="row m-5">
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle mx-auto d-block" width="200" height="200" src="images/methods_intro.jpg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                    <div class="mt-4 py-2 text-center">
+                        <h2 class="fw-normal">Сбор данных – основа прогноза</h2>
+                        <a class="btn btn-primary my-2" href="#data">Подробнее »</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle mx-auto d-block" width="200" height="200" src="images/methods_data.jpg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                    <div class="mt-4 py-2 text-center">
+                        <h2 class="fw-normal">Численное моделирование – сердце прогнозирования</h2>
+                        <a class="btn btn-primary my-2" href="#modeling">Подробнее »</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle mx-auto d-block" width="200" height="200" src="images/methods_computing.jpg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                    <div class="mt-4 py-2 text-center">
+                        <h2 class="fw-normal">Интерпретация и доставка прогноза</h2>
+                        <a class="btn btn-primary my-2" href="#forecast">Подробнее »</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lead">
+                <h2 id="intro" class="mb-3">Введение</h2>
+                <p>
+                    Прогнозирование погоды - это наука о предвидении состояния атмосферы в ближайшем будущем. Прогнозы погоды не всегда были такими точными и доступными, как это происходит сегодня, и это стало возможным благодаря развитию технологий и экономикой масштаба. В этой статье мы изучим, как собираются данные для прогнозов погоды и как они рассчитываются.
+                </p>
+
+                <h2 id="data" class="mb-3">Сбор данных для прогнозов погоды</h2>
+                <p>Прежде всего, прогноз погоды начинается со сбора огромного количества данных о текущем состоянии атмосферы и моря. Эта информация приходит из многочисленных источников:</p>
+                <ul>
+                    <li><b>Наземные метеостанции:</b> Расположенные по всему миру, они измеряют локальные атмосферные условия, такие как температура, влажность, атмосферное давление и ветер.</li>
+                    <li><b>Погодные спутники:</b> Они обеспечивают данные о температуре поверхности, облачности, скорости ветра на значительных высотах и концентрации аэрозолей.</li>
+                    <li><b>Летательные аппараты и буи:</b> Используются для сбора данных над открытыми океанами, где стационарные метеостанции отсутствуют.</li>
+                    <li><b>Радиозонды и радары:</b> Предоставляют профили температуры и влажности атмосферы, а также данные о осадках.</li>
+                </ul>
+                <p>Все эти данные синхронизируются и поступают в региональные и глобальные центры обработки погодной информации, где они компилируются и анализируются.</p>
+
+                <h2 id="modeling" class="mb-3">Численное моделирование – сердце прогнозирования</h2>
+                <p>Получив данные, следующий этап – это численное моделирование. На этом шаге применяются компьютерные модели, которые используют уравнения, описывающие физику атмосферы и океанов. Эти модели можно разделить на несколько типов:</p>
+                <ul>
+                    <li><b>Глобальные модели:</b> Охватывают весь земной шар и обеспечивают общий обзор погоды и климата.</li>
+                    <li><b>Региональные модели:</b> Более детализированы и фокусируются на конкретных регионах, обеспечивая высокую точность прогнозов на местном уровне.</li>
+                    <li><b>Специализированные модели:</b> Предназначены для прогнозирования определенных погодных явлений, таких как ураганы или паводки.</li>
+                </ul>
+                <p>Модели используют методы численного прогноза, который делит атмосферу на сетку виртуальных "кубиков" и вычисляет изменения в каждом из них через короткие промежутки времени. Эти вычисления теоретически позволяют прогнозировать погоду на дни, недели и даже месяцы вперед.</p>
+
+                <h2 id="forecast" class="mb-3">Интерпретация и доставка прогноза</h2>
+                <p>Наконец, интерпретация данных модели и формирование конечного прогноза – это роль опытных метеорологов. Они анализируют сырые данные моделей, исходя из своих знаний о местных погодных особенностях, времени года и недавних погодных событий. Затем:
+                <ul>
+                    <li><b>Анализ метеоролога:</b> Эксперты анализируют выходные данные из различных моделей, выявнавливают несоответствия и выбирают наиболее вероятные сценарии. Они могут корректировать прогноз на основе своего опыта и интуиции, а также принимать во внимание погодные особенности, характерные для данной местности.</li>
+                    <li><b>Формирование прогноза:</b> С учетом анализа метеоролога и выводов моделей создается прогноз, который можно понять и использовать широкой публике. Этот прогноз включает в себя информацию о температуре, ветре, дожде или снеге, а также специальные предупреждения о суровых погодных условиях.</li>
+                    <li><b>Доставка прогноза:</b> Прогнозы погоды транслируются через разнообразные платформы, включая телевидение, радио, интернет, мобильные приложения и социальные сети, чтобы информировать и предупреждать людей как можно быстрее и эффективнее.</li>
+                    <li><b>Мониторинг и коррекция в реальном времени:</b> Метеорологические службы постоянно мониторят актуальные погодные условия и корректируют прогнозы по мере необходимости. Этот процесс позволяет своевременно реагировать на непредвиденные изменения погодных условий.</li>
+                </ul>
+
+                <h2 id="outro" class="mb-3">Заключение</h2>
+                <p>Прогностический процесс — это сложное сочетание науки и технологии, требующее постоянного совершенствования и обновления. Он включает в себя не только автоматизированные системы, но и человеческий фактор в виде опыта и знаний метеорологов. Хотя прогнозы погоды не всегда могут быть абсолютно точными из-за хаотической природы атмосферы, современные технологии и методологии позволяют предсказывать погодные условия с высокой степенью достоверности. Это не только помогает людям планировать их ежедневные дела, но и спасает жизни, своевременно предупреждая об экстремальных погодных явлениях.</p>    
+            </div>
+        </main>
+    </div>
+
+    <div class="container pb-4">
+        <footer class="border-top">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5">
+                <div class="col mb-3">
+                    <h5>Главная</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="/#" class="nav-link p-0 text-body-secondary">Начало</a></li>
+                        <li class="nav-item mb-2"><a href="/#forecast-input" class="nav-link p-0 text-body-secondary">Подробный прогноз</a></li>
+                        <li class="nav-item mb-2"><a href="/#city-weather" class="nav-link p-0 text-body-secondary">Погода в городах</a></li>
+                        <li class="nav-item mb-2"><a href="/#text" class="nav-link p-0 text-body-secondary">Текст</a></li>
+                    </ul>
+                </div>
+        
+                <div class="col mb-3">
+                    <h5>Прогноз</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="/forecast.html#search" class="nav-link p-0 text-body-secondary">Поиск</a></li>
+                        <li class="nav-item mb-2"><a href="/forecast.html#weather" class="nav-link p-0 text-body-secondary">Погода</a></li>
+                        <li class="nav-item mb-2"><a href="/forecast.html#forecast" class="nav-link p-0 text-body-secondary">Прогноз</a></li>
+                    </ul>
+                </div>
+        
+                <div class="col mb-3">
+                    <h5>Методы</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="/methods.html#overview" class="nav-link p-0 text-body-secondary">Обзор</a></li>
+                        <li class="nav-item mb-2"><a href="/methods.html#intro" class="nav-link p-0 text-body-secondary">Введение</a></li>
+                        <li class="nav-item mb-2"><a href="/methods.html#data" class="nav-link p-0 text-body-secondary">Основной текст</a></li>
+                        <li class="nav-item mb-2"><a href="/methods.html#outro" class="nav-link p-0 text-body-secondary">Заключение</a></li>
+                    </ul>
+                </div>
+
+                <div class="col mb-3">
+                    <h5>Метеочувствительность</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="/sensitivity.html#overview" class="nav-link p-0 text-body-secondary">Обзор</a></li>
+                        <li class="nav-item mb-2"><a href="/sensitivity.html#headaches" class="nav-link p-0 text-body-secondary">Головные боли</a></li>
+                        <li class="nav-item mb-2"><a href="/sensitivity.html#sleep" class="nav-link p-0 text-body-secondary">Сонливость</a></li>
+                        <li class="nav-item mb-2"><a href="/sensitivity.html#emotions" class="nav-link p-0 text-body-secondary">Эмоциональные изменения</a></li>
+                    </ul>
+                </div>
+
+                <div class="col mb-3">
+                    <h5>О нас</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="/about.html" class="nav-link p-0 text-body-secondary">Начало</a></li>
+                        <li class="nav-item mb-2"><a href="/about.html#about" class="nav-link p-0 text-body-secondary">О нас</a></li>
+                        <li class="nav-item mb-2"><a href="/about.html#questions" class="nav-link p-0 text-body-secondary">Вопросы</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center my-5">
+                <p class="text-body-secondary">© Сенькевич Гаврил Дмитриевич, ИКБО-30-22</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html> 
